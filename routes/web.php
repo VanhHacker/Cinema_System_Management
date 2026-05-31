@@ -46,7 +46,7 @@ Route::get('/phim/{id}', [ClientMovieController::class, 'show'])->name('client.m
 Route::get('/rap-chieu', [ClientCinemaController::class, 'index'])->name('client.cinemasList'); 
 Route::get('/rap-chieu/{id}', [ClientCinemaController::class, 'show'])->name('client.showtimes'); 
 
-// 👉 ĐÃ THÊM: Route Lịch chiếu tổng hợp (Chuẩn bộ lọc nhiều rạp)
+// Route Lịch chiếu tổng hợp (Chuẩn bộ lọc nhiều rạp)
 Route::get('/lich-chieu', [ClientGlobalShowtimeController::class, 'index'])->name('client.showtimes.global');
 
 // Luồng Xác thực Khách hàng
